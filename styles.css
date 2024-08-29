@@ -1,36 +1,47 @@
 /* styles.css */
 body {
     background-color: #f8f9fa;
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #343a40;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2 {
-    color: #343a40;
+    color: #212529;
+    font-weight: 700;
+    margin-bottom: 15px;
 }
 
 p {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    color: #495057;
+    margin-bottom: 15px;
 }
 
 header {
     background-color: #343a40;
     color: white;
-    padding: 20px 0;
+    padding: 40px 0;
 }
 
 #name-title {
-    font-size: 3rem;  /* Make the font size larger */
-    font-weight: bold; /* Ensure the text is bold */
-    text-transform: uppercase; /* Convert text to uppercase */
+    font-size: 3.5rem;  /* Larger font size */
+    font-weight: bold;  /* Bold */
+    text-transform: uppercase; /* Uppercase */
+    margin-bottom: 10px;
 }
 
-h2 {
-    margin-top: 30px;
-    font-size: 2rem;
+.subtitle {
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #adb5bd;
 }
 
 .container {
     margin-top: 30px;
+    padding: 0 15px;
 }
 
 ul {
@@ -40,9 +51,27 @@ ul {
 
 ul li {
     margin-bottom: 15px;
+    font-size: 1.1rem;
 }
 
 footer {
     background-color: #343a40;
     color: white;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #adb5bd;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
