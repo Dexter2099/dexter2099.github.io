@@ -1,77 +1,121 @@
-/* styles.css */
+/* =============== BASE =============== */
 body {
-    background-color: #f8f9fa;
-    font-family: 'Roboto', Arial, sans-serif;
-    color: #343a40;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9fafc;
+  color: #212529;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 16px;
 }
 
-h1, h2 {
-    color: #212529;
-    font-weight: 700;
-    margin-bottom: 15px;
+/* Typography */
+h1, h2, h3 {
+  font-weight: 700;
+  color: #0d6efd;
+  margin-bottom: 0.5rem;
 }
 
-p {
-    font-size: 1rem;
-    color: #495057;
-    margin-bottom: 15px;
+h2 {
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 0.25rem;
+  margin-top: 2rem;
 }
 
-header {
-    background-color: #343a40;
-    color: white;
-    padding: 40px 0;
+p, li {
+  color: #333;
 }
 
-#name-title {
-    font-size: 3.5rem;  /* Larger font size */
-    font-weight: bold;  /* Bold */
-    text-transform: uppercase; /* Uppercase */
-    margin-bottom: 10px;
-}
-
-.subtitle {
-    font-size: 1.25rem;
-    font-weight: 400;
-    color: #adb5bd;
-}
-
+/* =============== CONTAINER =============== */
 .container {
-    margin-top: 30px;
-    padding: 0 15px;
+  max-width: 960px;
+  margin: auto;
+  padding: 2rem 1rem;
 }
 
-ul {
-    list-style-type: none;
-    padding-left: 0;
+/* =============== HEADER =============== */
+header {
+  background-color: #e9f0f9;
+  padding: 3rem 1rem;
+  border-bottom: 1px solid #ced4da;
 }
 
-ul li {
-    margin-bottom: 15px;
-    font-size: 1.1rem;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.25rem;
 }
 
-footer {
-    background-color: #343a40;
-    color: white;
-    padding: 20px 0;
-    margin-top: 30px;
+header .subtitle {
+  font-size: 1.25rem;
+  color: #495057;
 }
 
-footer p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #adb5bd;
+/* =============== SECTIONS =============== */
+section {
+  margin-bottom: 2rem;
 }
 
+/* =============== LISTS =============== */
+ul, ol {
+  padding-left: 1.25rem;
+  margin-top: 0.5rem;
+}
+
+ul li, ol li {
+  margin-bottom: 0.5rem;
+}
+
+/* =============== LINKS =============== */
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: #0d6efd;
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+/* =============== FOOTER =============== */
+footer {
+  background-color: #f1f3f5;
+  color: #6c757d;
+  padding: 1rem;
+  font-size: 0.9rem;
+  border-top: 1px solid #dee2e6;
+}
+
+/* =============== ANIMATIONS =============== */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+section:nth-child(even) {
+  animation-delay: 0.1s;
+}
+section:nth-child(odd) {
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =============== RESPONSIVE =============== */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
 }
