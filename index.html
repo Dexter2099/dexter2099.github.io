@@ -2,140 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dexter Mehta - Portfolio</title>
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dexter Mehta | Software Developer Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="styles.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a2e0ff4f01.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- Header -->
-  <header class="text-center py-5 bg-light border-bottom">
-    <h1 id="name-title" class="display-4">Dexter Mehta</h1>
-    <p class="lead subtitle">Aspiring Software Developer - AI Enthusiast</p>
+  <!-- 🌗 Dark Mode Toggle -->
+  <div class="toggle-container">
+    <input type="checkbox" id="darkModeToggle" />
+    <label for="darkModeToggle"><i class="fas fa-moon"></i> Dark Mode</label>
+  </div>
+
+  <!-- 🚀 Header -->
+  <header class="text-center p-5" data-aos="fade-down">
+    <h1>Dexter Mehta</h1>
+    <p class="lead">Full-Stack Developer | AI Enthusiast</p>
   </header>
 
-  <!-- Main Content -->
-  <main class="container my-5">
+  <!-- 👤 About -->
+  <section class="container my-5" id="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I am a Master of Information Technology graduate from Queensland University of Technology (QUT) with a passion for software development and AI. I thrive in collaborative, fast-moving environments and genuinely enjoy learning new technologies and working with people to solve real problems.</p>
+    <p>In 2024–2025, I traveled overseas while dedicating myself to mastering full-stack development by building real-world applications and refining my skills. I’m now seeking a software development role where I can contribute, grow, and make meaningful impact.</p>
+  </section>
 
-    <!-- About Me -->
-    <section>
-      <h2>About Me</h2>
-      <p>
-        A highly motivated and technically proficient Master of Information Technology graduate from Queensland University of Technology (QUT). Looking to establish myself in a career in software development. Adept at communicating with clients, learning new technologies, and working collaboratively in fast-paced environments.
-      </p>
-    </section>
+  <!-- 🎓 Education -->
+  <section class="container my-5" id="education" data-aos="fade-up">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Master of Information Technology</strong> – QUT, Brisbane (Graduated Sep 2023)<br>
+      GPA: 6.75, Dean’s List<br>
+      Coursework: Software Dev, AI, Cybersecurity, IT Project Mgmt, Advanced Algorithms</li>
+      <li><strong>Bachelor of Physiotherapy</strong> – Graduated 2017</li>
+    </ul>
+  </section>
 
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-      <ul>
-        <li><strong>Master of Information Technology</strong>, Queensland University of Technology (QUT), Brisbane QLD, Graduated: September 2023</li>
-      </ul>
-      <p>Admitted to the Dean’s List of Students with Excellent Academic Performance (6.75 GPA)</p>
-      <p>Relevant Coursework: Software Development, Data Science, Cybersecurity, IT Project Management, Advanced Algorithms, Database Management</p>
-    </section>
+  <!-- 💼 Experience -->
+  <section class="container my-5" id="experience" data-aos="fade-up">
+    <h2>Professional Experience</h2>
+    <p><strong>SPEARS Health (Feb 2021 – May 2024)</strong><br>
+    Rehabilitation Physiotherapist | Strength-based programs, athlete performance, veteran care, holistic rehabilitation, collaboration with support networks.</p>
+    <p><strong>Medibank Healthstrong (Jan 2018 – Dec 2020)</strong><br>
+    Physiotherapist | Led group classes, designed individualized programs, improved mobility in aged-care clients.</p>
+  </section>
 
-    <!-- Capstone Projects -->
-    <section>
-  <h2>Portfolio Project/s</h2>
-  <p><strong>Full Stack Applications</strong></p>
+  <!-- 🧠 Portfolio Projects -->
+  <section class="container my-5" id="projects">
+    <h2 data-aos="fade-up">Portfolio Projects</h2>
+    <div class="row g-4 mt-3">
+      <!-- Project Cards -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card glass" data-tilt>
+          <div class="card-body">
+            <h5 class="card-title">Inventory Management System</h5>
+            <p class="card-text">React + TypeScript, .NET 8, SQL Server. Secure, responsive UI with full CRUD and reporting.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card glass" data-tilt>
+          <div class="card-body">
+            <h5 class="card-title">Crypto Portfolio Visualizer</h5>
+            <p class="card-text">React + Vite + Flask backend. Live data from CoinGecko API, Chart.js visualization, asset tracking.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-right">
+        <div class="card glass" data-tilt>
+          <div class="card-body">
+            <h5 class="card-title">Drone Command & Control System</h5>
+            <p class="card-text">React + Leaflet.js frontend, Flask + Socket.IO backend. Live map-based drone telemetry and command UI.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card glass" data-tilt>
+          <div class="card-body">
+            <h5 class="card-title">Threat Detection AI Simulation</h5>
+            <p class="card-text">React + Chart.js frontend, PyTorch ML backend. AI classifies live telemetry for anomaly detection.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <p>View more at: <a href="https://github.com/Dexter2099" target="_blank">https://github.com/Dexter2099</a></p>
+  <!-- 📘 Novel -->
+  <section class="container my-5" id="novel" data-aos="fade-up">
+    <h2>Other Work – Author</h2>
+    <p><strong><em>I Am Your Beast</em></strong> – A dystopian sci-fi novel exploring consciousness, digital identity, and transhumanism. Self-published via Amazon KDP in 2025.</p>
+    <p><a href="https://www.goodreads.com/book/show/232581343-i-am-your-beast" target="_blank">Read on Goodreads</a></p>
+  </section>
 
-  <ol>
-    <li>
-      <p><strong>🔹 Drone Command & Control System</strong></p>
-      <p>
-        Built using ⚛️ React + TypeScript + Leaflet.js (frontend), 🐍 Flask + Socket.IO + SQLite (backend) to simulate real-time UAV telemetry and tactical control.
-      </p>
-      <p>
-        Implements live map-based drone tracking and secure command issuance like <em>“Hold Position”</em> or <em>“Return to Base.”</em>
-      </p>
-    </li>
-    <li>
-      <p><strong>🔹 Threat Detection AI Simulation</strong></p>
-      <p>
-        Built using ⚛️ React + Chart.js + Axios (frontend), 🤖 PyTorch + Flask REST API (backend) to simulate AI-powered cyber intrusion detection.
-      </p>
-      <p>
-        Feeds synthetic network telemetry into an ML classifier that distinguishes between normal and anomalous activity.
-      </p>
-    </li>
-    <li>
-      <p><strong>Inventory Management System App</strong></p>
-      <p>
-        Built using ⚛️ React + TypeScript (frontend), 💼 .NET 8 Web API + Entity Framework (backend), and 🗃️ SQL Server for data persistence.
-      </p>
-    </li>
-    <li>
-      <p><strong>Crypto Portfolio Visualizer</strong></p>
-      <p>
-        A full-stack app to track, visualize, and analyze your cryptocurrency holdings in real-time.
-      </p>
-      <p>
-        Built using ⚛️ React + Vite + Axios + Chart.js (frontend), 🐍 Python Flask + Flask-CORS + SQLAlchemy (backend), and 🔗 CoinGecko API for live crypto price tracking.
-      </p>
-    </li>
-  </ol>
-</section>
+  <!-- 📞 Contact -->
+  <section class="container my-5" id="contact" data-aos="fade-up">
+    <h2>Contact Me</h2>
+    <ul>
+      <li>Email: <a href="mailto:Dexter.mehta01@gmail.com">Dexter.mehta01@gmail.com</a></li>
+      <li>Phone: 0455 888 432</li>
+      <li>GitHub: <a href="https://github.com/Dexter2099" target="_blank">github.com/Dexter2099</a></li>
+      <li>Portfolio: <a href="https://dexter2099.github.io" target="_blank">dexter2099.github.io</a></li>
+      
+    </ul>
+  </section>
 
-
-    <!-- Work Experience -->
-    <section>
-      <h2>Work Experience</h2>
-      <ul>
-        <li>
-          <strong>Rehabilitation Physiotherapist</strong>, SPEARS HEALTH, Feb 2021 – May 2024
-          <p>
-            Applied best-practice strength-based interventions. Specialized in military veterans and long-term care plans including holistic treatment strategies.
-          </p>
-        </li>
-        <li>
-          <strong>Physiotherapist – Aged Care and Community</strong>, Medibank & Healthstrong, Jan 2018 – Dec 2020
-          <p>
-            Organized and led group exercise classes. Developed individualized exercise programs for aging populations and chronic conditions.
-          </p>
-        </li>
-      </ul>
-    </section>
-
-    <!-- Other Works -->
-    <section>
-      <h2>Other Works</h2>
-      <p><strong>Author – <em>I Am Your Beast</em></strong><br>
-      Self-published via Amazon KDP (2025)</p>
-      <p>
-        A dystopian sci-fi novel exploring themes of consciousness, digital identity, and transhumanism. Written independently to reflect a deep passion for the intersection of humanity and future technology.
-      </p>
-      <p>
-        Available at: <a href="https://www.goodreads.com/book/show/232581343-i-am-your-beast" target="_blank">https://www.goodreads.com/book/show/232581343-i-am-your-beast</a>
-      </p>
-    </section>
-
-    <!-- Contact Details -->
-    <section>
-      <h2>Contact Details</h2>
-      <p>Email: <a href="mailto:Dexter.Mehta01@gmail.com">Dexter.Mehta01@gmail.com</a></p>
-      <p>Phone: 0455 888 432</p>
-      <p>GitHub: <a href="https://github.com/Dexter2099" target="_blank">https://github.com/Dexter2099</a></p>
-    </section>
-
-  </main>
-
-  <!-- Footer -->
-  <footer class="text-center py-3 border-top bg-light">
-    <p>© 2025 Dexter Mehta</p>
-  </footer>
-
-  <!-- Bootstrap JS Bundle -->
+  <!-- 🧠 Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.7.2/dist/vanilla-tilt.min.js"></script>
+  <script>
+    AOS.init();
+    const toggle = document.getElementById('darkModeToggle');
+    const body = document.body;
+    toggle.checked = localStorage.getItem('darkMode') === 'true';
+    const updateMode = () => {
+      if (toggle.checked) {
+        body.classList.add('dark-mode');
+        localStorage.setItem('darkMode', 'true');
+      } else {
+        body.classList.remove('dark-mode');
+        localStorage.setItem('darkMode', 'false');
+      }
+    };
+    toggle.addEventListener('change', updateMode);
+    updateMode();
+  </script>
 </body>
 </html>
-
