@@ -17,6 +17,7 @@ body {
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background 0.3s ease, color 0.3s ease;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* 📦 Card Styling w/ Glassmorphism */
@@ -65,8 +66,9 @@ html {
 }
 
 /* Typography */
-h1, h5 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
+  font-family: 'Roboto', sans-serif;
 }
 
 .card-title {
